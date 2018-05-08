@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        #myTab{
+            padding-left:0;
+        }
+        .introduceTab{
+            margin-top:30px;
+        }
+        .mytabs{
+            width:200px;
+        }
+        .colWidth{
+            width:195px;
+        }
+        .mytabs ul li {
+            list-style: none;
+            height: 55px;
+            width: 200px;
+            background-color: #ededed;
+            border-bottom:1px solid #b9b9b9;
+        }
+        .mytabs ul li a{
+            background: url(../images/brita/nav_separator.png) top left no-repeat;
+            position: relative;
+            z-index: 110;
+            height: 55px;
+            display: block;
+            float: left;
+            padding: 0 10px 0 10px;
+            line-height: 55px;
+            text-decoration: none;
+            color: #787878;
+            text-transform: uppercase;
+        }
+        #myTab li{
+            background: -webkit-linear-gradient(#ffffff, #e7e7e7); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(#ffffff, #e7e7e7); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(#ffffff, #e7e7e7); /* Firefox 3.6 - 15 */
+            background: linear-gradient(#ffffff, #e7e7e7); /* 标准的语法（必须放在最后） */
+        }
+        .myTabPhone{
+            display: none;
+        }
+
+        .tabBox .navhd {
+            height: 44px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            line-height: 44px;
+            -moz-box-flex: 1;
+            background: #eee;
+            border-bottom: 1px solid #ddd;
+            -webkit-box-flex: 1;
+            box-flex: 1;
+        }
+        .tabBox .hd {
+            position: absolute;
+            left: auto;
+        }
+        .tabBox .hd ul {
+            position: relative;
+            white-space: nowrap;
+        }
+        .tabBox .hd ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .tabBox .hd ul li a {
+            display: block;
+            padding: 0 10px;
+            line-height: 40px;
+            font-size: 16px;
+            text-align: center;
+            border-bottom: solid 2px #eee;
+            color: #666;
+        }
+        .tabBox .hd ul li.on a {
+            color: #48a5f4 !important;
+            border-bottom: solid 2px #48a5f4;
+        }
+        .tabBox .con{padding:0 10px;}
+        .tabBox .bd li{ padding: 10px 0; border-bottom:dotted 1px #eee;}
+        #myTab li{
+            background:none;
+        }
+        .ourStorycontent{
+            float: left;
+            background-color: #fBfBfB;
+            background-image: url(../images/brita/gradient_spacer.png);
+            background-repeat: no-repeat;
+            background-position: center top;
+            width:70%;
+            border-right:1px solid #e3e3e3;
+        }
+    </style>
+</head>
+
+<body>
+<!--主体部分-->
+<div class="introduceTab">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 colWidth removeColwidth">
+                <div class="mytabs mytabTop myTabPC">
+                    <ul id="myTab">
+                        <li><a href="#ourStory" data-toggle="tab">111</a></li>
+                        <li><a href="#parternership" data-toggle="tab">222</a></li>
+                        <li><a href="#clientCare" data-toggle="tab">333</a></li>
+                        <li><a href="#brochures" data-toggle="tab">444</a></li>
+                        <li><a href="#pricing" data-toggle="tab">555</a></li>
+                    </ul>
+                </div>
+                <div class="mytabs mytabTop myTabPhone tabBox" id="tabBox1">
+                    <div class="navhd">
+                        <div class="hd hdi">
+                            <ul id="myTab">
+                                <li><a href="#ourStory" data-toggle="tab">111</a></li>
+                                <li><a href="#parternership" data-toggle="tab">222</a></li>
+                                <li><a href="#clientCare" data-toggle="tab">333</a></li>
+                                <li><a href="#brochures" data-toggle="tab">444</a></li>
+                                <li><a href="#pricing" data-toggle="tab">555</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+                <div class="tabs">
+                    <div id="myTabContent" class="clearfix tab-content">
+                        <div class="tab-pane fade in active sectionP" id="ourStory">
+                            <div class="ourStorycontent">
+                                <h5>111</h5>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="parternership">
+                            <div class="ourStorycontent">
+                                <h5>222</h5>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="clientCare">
+                            <div class="ourStorycontent">
+                                <h5>333</h5>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="brochures">
+                            <div class="ourStorycontent ourStoryspecial">
+                                <h5>444</h5>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pricing">
+                            <div class="ourStorycontent">
+                                <h5>555</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        //当为手机屏幕的时候，删除类colWidth
+        var screenWidth = document.body.clientWidth;
+        if (screenWidth > 320 && screenWidth < 500) {
+            $(".removeColwidth").removeClass("colWidth");
+            $(".myTabPC").css("display","none");
+            $(".myTabPhone").css("display","block").css("width","100%");
+        }
+        var nav_w=$(".hdi li").first().width();
+        $(".hdi li").on('click', function(){
+            nav_w=$(this).width();
+            $(this).addClass("on").siblings().removeClass("on");
+            var fn_w = ($(".navhd").width() - nav_w) / 2;
+            var fnl_l;
+            var fnl_x = parseInt($(this).position().left);
+            if (fnl_x <= fn_w){
+                fnl_l = 0;
+            }else if(fn_w - fnl_x <= flb_w - fl_w) {
+                fnl_l = flb_w - fl_w;
+            }else{
+                fnl_l = fn_w - fnl_x;
+            }
+            $(".hdi").animate({"left" : fnl_l}, 300);
+
+        });
+        var fl_w=$(".hdi").width();
+        var flb_w=$(".navhd").width();
+        $(".hdi").on('touchstart', function (e) {
+            var touch1 = e.originalEvent.targetTouches[0];
+            x1 = touch1.pageX;
+            y1 = touch1.pageY;
+            ty_left = parseInt($(this).css("left"));
+        });
+        $(".hdi").on('touchmove', function (e) {
+            var touch2 = e.originalEvent.targetTouches[0];
+            var x2 = touch2.pageX;
+            var y2 = touch2.pageY;
+            if(ty_left + x2 - x1>=0){
+                $(this).css("left", 0);
+            }else if(ty_left + x2 - x1<=flb_w-fl_w){
+                $(this).css("left", flb_w-fl_w);
+            }else{
+                $(this).css("left", ty_left + x2 - x1);
+            }
+            if(Math.abs(y2-y1)>0){
+                e.preventDefault();
+            }
+        });
+        TouchSlide( { slideCell:"#tabBox1",
+            endFun:function(i){
+                //联动切换
+                var as=document.getElementById("myTab").getElementsByTagName('a');
+                fnl_x =  parseInt($(".hdi li").eq(i).position().left);
+                nav_w=$(".hdi li").eq(i).width();
+                $(".hdi li").eq(i).addClass("on").siblings().removeClass("on");
+                var fn_w = ($(".navhd").width() - nav_w) / 2;
+                var fnl_l;
+                if (fnl_x <= fn_w) {
+                    fnl_l = 0;
+                } else if (fn_w - fnl_x <= flb_w - fl_w) {
+                    fnl_l = flb_w - fl_w;
+                } else {
+                    fnl_l = fn_w - fnl_x;
+                }
+                $(".hdi").animate({
+                    "left" : fnl_l
+                }, 300);
+
+                //高度自适应
+                var bd = document.getElementById("tabBox1-bd");
+                bd.parentNode.style.height = bd.children[i].children[0].offsetHeight+"px";
+                if(i>0)bd.parentNode.style.transition="200ms";//添加动画效果
+            }
+        });
+    })
+</script>
+</body>
+</html>
